@@ -6,9 +6,9 @@ Estudiante: Hendrick Rolando Calderón Aguirre
 Actividad:  Laboratorio.  Administración de MONGO DB con Interfaz Gráfica, Transformación de CSV a JSON
 """)
 #Path del archivo original de lectura
-origin_path = '/home/hendrick/Documentos/UNIR/SEMESTRE I/Métodos de Captura y Almacenamiento de los Datos/Actividades/Maori/Business operations rates, activities, annual.csv'
+origin_path = '/home/hendrick/Documentos/UNIR/SEMESTRE I/Métodos de Captura y Almacenamiento de los Datos/Actividades/Laboratorio/CSV_JSON/Agriculture horticulture information for Maori farms, annual.csv'
 #Path del archivo transformado a CSV
-destiny_path = '/home/hendrick/Documentos/UNIR/SEMESTRE I/Métodos de Captura y Almacenamiento de los Datos/Actividades/Maori/Business operations rates, activities, annual.json'
+destiny_path = '/home/hendrick/Documentos/UNIR/SEMESTRE I/Métodos de Captura y Almacenamiento de los Datos/Actividades/Laboratorio/CSV_JSON/Agriculture horticulture information for Maori farms, annual.json'
 #Abriendo archivo original con privilegios de lectura
 _file = open(origin_path,'r')
 #Abriendo archivo destino con privilegios de escritura
@@ -26,12 +26,12 @@ for line in reg:
     tmp = line.split(",")
     for x in range(0,len(encabezado)):
         if x != len(encabezado) - 1:
-            ln+="\"" + encabezado[x].strip() + "\": " + tmp[x].strip() + ",\n"
+            ln+="\"" + encabezado[x].strip() + "\": \"" + tmp[x].strip() + "\",\n"
         else:
-            ln+="\"" + encabezado[x].strip() + "\":" + tmp[x].strip() + '\n'
+            ln+="\"" + encabezado[x].strip() + "\":\"" + tmp[x].strip() + '\"\n'
     if cont < len(reg):
         ln+='},\n'
-    else:         
+    else:
         ln+='}\n]'
     #Escribiendo la nueva línea conformada en el archivo de destino
     _nfile.write(ln)

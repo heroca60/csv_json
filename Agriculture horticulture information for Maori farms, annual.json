@@ -1,0 +1,50 @@
+[
+{
+"Year": "2007",
+"Kiwifruit": "311.40",
+"Avocados": "39.80",
+"Wine_grapes": "75.90",
+"Onions": "212.00",
+"Squash":"0.40"
+},
+{
+"Year": "2009",
+"Kiwifruit": "345.00",
+"Avocados": "39.00",
+"Wine_grapes": "83.00",
+"Onions": "230.00",
+"Squash":"50.10"
+},
+{
+"Year": "2011",
+"Kiwifruit": "349.40",
+"Avocados": "49.90",
+"Wine_grapes": "207.50",
+"Onions": "290.00",
+"Squash":"150.10"
+},
+{
+"Year": "2012",
+"Kiwifruit": "347.20",
+"Avocados": "114.60",
+"Wine_grapes": "298.70",
+"Onions": "291.00",
+"Squash":"210.10"
+},
+{
+"Year": "2014",
+"Kiwifruit": "314.30",
+"Avocados": "78.90",
+"Wine_grapes": "408.00",
+"Onions": "317.60",
+"Squash":"224.10"
+},
+{
+"Year": "2017",
+"Kiwifruit": "471.20",
+"Avocados": "35.70",
+"Wine_grapes": "320.50",
+"Onions": "435.10",
+"Squash":"132.50"
+}
+]
